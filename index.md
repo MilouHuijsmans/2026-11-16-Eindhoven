@@ -543,7 +543,7 @@ please preview your site before committing, and make sure to run
 </p>
 <p>
   We onderhouden een lijst van veel voorkomende problemen tijdens installatie op de
-  <a href = "{{site.dc_github}}/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki pagina</a>. Ook kun je meer informatie over set-up vinden via: <a href="https://datacarpentry.org/socialsci-workshop/setup-r-workshop.html">deze pagina</a>.
+  <a href = "https://github.com/carpentries/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki pagina</a>. Ook kun je meer informatie over set-up vinden via: <a href="https://datacarpentry.org/socialsci-workshop/setup-r-workshop.html">deze pagina</a>.
 </p>
 
 <p>Voor hulp bij het installeren van R en RStudio: kom naar een van de online inloopsessies (uitnodiging volgt).
