@@ -11,8 +11,8 @@ humandate: "16 november 2026"    # human-readable dates for the workshop (e.g., 
 humantime: "9:30 - 16.30 (inloop vanaf 9:00)"    # human-readable times for the workshop e.g., "9:00 am - 4:30 pm CEST (7:00 am - 2:30 pm UTC)"
 startdate: 2026-11-16      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
 enddate: 2026-11-16        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
-instructor: ["Marta Kargól"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["Ruud Steltenpool", "Milou Huijsmans", "Maria Blix", "Anne-Marie Borgers-van Boekel"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+instructor: ["Marta Kargól", "Ruud Steltenpool"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helper: ["Milou Huijsmans", "Maria Blix", "Anne-Marie Borgers-van Boekel"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 email: ["m.m.kargol@saxion.nl"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
 # Optional variables
 collaborative_notes:  https://pad.carpentries.org/2026-11-16-Eindhoven # URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
@@ -372,12 +372,12 @@ Edit the text to match who can attend the workshop. For instance:
 - This workshop is open to the public.
 - If you are interested in attending this workshop, contact me@example.com
   for more information
-{% endcomment %}
+
 <p id="who-can-attend">
     <strong>Wie kan deelnemen?:</strong>
     Deze workshop is open voor onderzoekers en onderzoeksondersteuners van organisaties die zijn aangesloten bij DCC-PO.
 </p>
-
+{% endcomment %}
 
 
 {% comment %}
@@ -536,11 +536,14 @@ please preview your site before committing, and make sure to run
 </p>
 <p>
   We onderhouden een lijst van veel voorkomende problemen tijdens installatie op de
-  <a href = "{{site.swc_github}}/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki pagina</a>.
+  <a href = "{{site.swc_github}}/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki pagina</a>. Ook kun je meer informatie over set-up vinden via: <a href="https://datacarpentry.org/socialsci-workshop/setup-r-workshop.html">deze pagina</a>.
+</p>
+
+<p>Voor hulp bij het installeren van R en RStudio: kom naar een van de online inloopsessies (uitnodiging volgt).
 </p>
 
 <p>
-  <em>Lukt het niet om de installatie te voltooien vooraf aan de workshop? Maak dan in de internet browser gebruik van <a href="https://webr.sh/">deze web-versie van RStudio</a></em>
+  <em>Lukt het niet om de installatie te voltooien vooraf aan de workshop? Maak dan in de internet browser gebruik van <a href="https://webr.sh/">deze web-versie van RStudio</a>.</em>
 </p>
 
 {% comment %}
