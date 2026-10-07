@@ -343,7 +343,7 @@ address.
         <dt class="col-sm-2 col-md-2 py-2 px-3 bg-body-light text-body-secondary fw-bold">Workshop FAQ</dt>
         <dd class="col py-2 px-3 mx-0 mb-0">
             <p id="workshops-faq">
-            Voor antwoorden op veelgestelde vragen over de workshop, ga naar <a href="[https://carpentries.org/workshops/workshops-faq/](https://carpentries.org/workshops/workshops-faq/)">the Carpentries Workshop FAQ</a>.
+            Voor antwoorden op veelgestelde vragen over de workshop, ga naar <a href="https://carpentries.org/workshops/workshops-faq/">the Carpentries Workshop FAQ</a>.
             </p>    
         </dd>
     </div>
