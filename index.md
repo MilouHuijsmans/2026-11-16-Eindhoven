@@ -305,11 +305,18 @@ address.
                 </ul>
             {% endif %}
             </p>
-            <p>
-            <a href="https://glosario.carpentries.org/">Glosario</a>is een meertalige glossary voor computationele en data science termen. De glossary helpt met het volgen van workshops en het gebruiken van computationele en data science jargon geschreven in het Engels door deze aan te bieden in andere talen. Het vertalen van data science termen is ook een tool voor Carpentries Instructors om de drempels voor het leren van data science te verlagen.
-            </p>
+            </dd>
+            </div>
+
+  <div class="row">
+        <dt class="col-sm-2 col-md-2 py-2 px-3 bg-body-light text-body-secondary fw-bold">Glosario</dt>
+        <dd class="col py-2 px-3 mx-0 mb-0">
+          <p>
+            <a href="https://glosario.carpentries.org/">Glosario</a> is een meertalige glossary voor computationele en data science termen. De glossary helpt met het volgen van workshops en het gebruiken van computationele en data science jargon geschreven in het Engels door deze aan te bieden in andere talen. Het vertalen van data science termen is ook een tool voor Carpentries Instructors om de drempels voor het leren van data science te verlagen.
+          </p>
         </dd>
     </div>
+
     <div class="row">
         <dt class="col-sm-2 col-md-2 py-2 px-3 bg-body-light text-body-secondary fw-bold">Contact</dt>
         <dd class="col py-2 px-3 mx-0 mb-0">
