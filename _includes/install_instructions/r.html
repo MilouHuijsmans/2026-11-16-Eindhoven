@@ -10,46 +10,46 @@
   <div class="card-body">
 
   <p>
-    <a href="https://www.r-project.org">R</a> is a programming language
-    that is especially powerful for data exploration, visualization, and
-    statistical analysis. To interact with R in our lessons, we typically use
+    <a href="https://www.r-project.org">R</a> is een programmeertaal die bijzonder krachtig is voor data-exploratie, visualisatie en statistische analyse. Om in onze lessen met R te werken, gebruiken we doorgaans
     <a href="https://posit.co/products/open-source/rstudio/">RStudio</a>.
   </p>
 
 <div class="tab-content">
     <article role="tabpanel" class="tab-pane active" id="rstats-windows">
     <p>
-        Install R by:
+        Installeer R en RStudio als via:    
+         <br/>
+          <br/>
+          Software Center (voor werk laptops) of:
+  
         <ul>
-        <li>Downloading and running <a href="https://cran.r-project.org/bin/windows/base/release.htm">this .exe file</a> from <a href="https://cran.r-project.org/index.html">CRAN</a>.</li>
-        <li>Installing the <a href="https://posit.co/download/rstudio-desktop/">RStudio IDE</a>.</li>
+        <li>Download en voer <a href="https://cran.r-project.org/bin/windows/base/release.htm">dit .exe bestand</a> uit van <a href="https://cran.r-project.org/index.html">CRAN</a>.</li>
+        <li>Installeer de <a href="https://posit.co/download/rstudio-desktop/">RStudio IDE</a>.</li>
         <br/>
         <div class="info alert alert-warning">
-            Note that if you have separate user and admin accounts, you should run the
-            installers as administrator (right-click on .exe file and select "Run as
-            administrator" instead of double-clicking).
-            Otherwise problems may occur later, for example when installing R packages.
+            Let op: als je aparte gebruikers- en beheerdersaccounts hebt, voer de installatieprogramma's dan uit als beheerder (klik met de rechtermuisknop op het .exe-bestand en kies 'Als administrator uitvoeren' in plaats van erop te dubbelklikken). 
+          Doe je dit niet, dan kunnen er later problemen ontstaan, bijvoorbeeld bij het installeren van R packages.
         </div>
         </ul>
     </p>
     </article>
     <article role="tabpanel" class="tab-pane" id="rstats-macos">
     <p>
-        Install R by:
+        Installeer R en Rstudio als volgt:
         <ul>
-        <li>Downloading and running <a href="https://cran.r-project.org/bin/macosx/R-latest.pkg">this .pkg file</a> from <a href="https://cran.r-project.org/index.html">CRAN</a>.</li>
-        <li>Installing the <a href="https://posit.co/download/rstudio-desktop/">RStudio IDE</a>.</li>
+        <li>Download en voer <a href="https://cran.r-project.org/bin/macosx/R-latest.pkg">dit .pkg bestand</a> uit van <a href="https://cran.r-project.org/index.html">CRAN</a>.</li>
+        <li>Installeer de <a href="https://posit.co/download/rstudio-desktop/">RStudio IDE</a>.</li>
         </ul>
     </p>
     </article>
     <article role="tabpanel" class="tab-pane" id="rstats-linux">
     <p>
-        Install R by:
+        Installeer R en RStudio als volgt:
         <ul>
-        <li>Navigating to <a href="https://cran.r-project.org/bin/linux/">CRAN</a> and following the instructions outlined there, using your package manager. We have reproduced the commands below:<br/>
+        <li>Navigeer naar <a href="https://cran.r-project.org/bin/linux/">CRAN</a> en volg de instructies, met gebruik van jouw package manager. We hebben de commands hier beneden gereproduceerd:<br/>
         <div class="info alert-info">
-            Use the terminal command prompt to type/copy-and-paste these commands in, pressing <kbd>Enter</kbd> after each line to run the command.<br/>
-            Do not run the lines with <code>#</code> at the start of each line, as this indicates a comment and is not part of the command.
+            Gebruik de terminal command prompt om deze commands te typen of kopiëren en plakken, druk <kbd>Enter</kbd> na elke lijn om het command uit te voeren.<br/>
+            Run niet de lijntjes met <code>#</code> aan het begin van de lijn, omdat dit een opmerking aangeeft en niet onderdeel is van het command..
         </div>
             <pre>
 # update indices
@@ -68,7 +68,7 @@ sudo add-apt-repository "deb https://cloud.r-project.org/bin/linux/ubuntu $(lsb_
 sudo apt install --no-install-recommends r-base
             </pre>
         </li>
-        <li>Installing the <a href="https://posit.co/download/rstudio-server/">RStudio Server IDE</a>:<br/>
+        <li>Installeer de <a href="https://posit.co/download/rstudio-server/">RStudio Server IDE</a>:<br/>
             <pre>
 # install dependencies
 sudo apt install -y r-base-core r-recommended r-base-dev gdebi-core build-essential libcurl4-gnutls-dev libxml2-dev libssl-dev
@@ -89,17 +89,17 @@ sudo systemctl start rstudio-server
 sudo systemctl enable rstudio-server
             </pre>
         </li>
-        <li>After installation of RStudio Server, check you can access it by:
+        <li>Na het installeren van RStudio Server, check of je het kan bereiken door:
             <ul>
-            <li>Opening a web browser and navigating to <code>http://localhost:8787</code>.</li>
-            <li>Logging in with the username and password you used when you set up Linux / WSL2.</li>
+            <li>Het openen van een web browser en navigeren naar <code>http://localhost:8787</code>.</li>
+            <li>Inloggen met de gebruikersnaam en het wachtwoord dat je hebt gebruik om Linux/WSL2 te configureren.</li>
             </ul>
         </li>
         </ul>
     </p>
     <p>
-        If you are using Windows and WSL2, the full in-depth instructions for installing R on WSL2 can be found in this
-        <a href="https://support.posit.co/hc/en-us/articles/360049776974-Using-RStudio-Server-in-Windows-WSL2">POSIT article</a>.
+        Als je Windows en WSL2 gebruikt, kun je de volledige instructies voor het installeren van R en RStudio op WSL2 vinden in dit 
+        <a href="https://support.posit.co/hc/en-us/articles/360049776974-Using-RStudio-Server-in-Windows-WSL2">POSIT artikel</a>.
     </p>
     </article>
   </div>
