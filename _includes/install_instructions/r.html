@@ -42,66 +42,7 @@
         </ul>
     </p>
     </article>
-    <article role="tabpanel" class="tab-pane" id="rstats-linux">
-    <p>
-        Installeer R en RStudio als volgt:
-        <ul>
-        <li>Navigeer naar <a href="https://cran.r-project.org/bin/linux/">CRAN</a> en volg de instructies, met gebruik van jouw package manager. We hebben de commands hier beneden gereproduceerd:<br/>
-        <div class="info alert-info">
-            Gebruik de terminal command prompt om deze commands te typen of kopiëren en plakken, druk <kbd>Enter</kbd> na elke lijn om het command uit te voeren.<br/>
-            Run niet de lijntjes met <code>#</code> aan het begin van de lijn, omdat dit een opmerking aangeeft en niet onderdeel is van het command..
-        </div>
-            <pre>
-# update indices
-sudo apt update -qq
 
-# install two helper packages we need
-sudo apt install --no-install-recommends software-properties-common dirmngr
-
-# add the signing key for these repos
-wget -qO- https://cloud.r-project.org/bin/linux/ubuntu/marutter_pubkey.asc | sudo tee -a /etc/apt/trusted.gpg.d/cran_ubuntu_key.asc
-
-# add the repo from CRAN
-sudo add-apt-repository "deb https://cloud.r-project.org/bin/linux/ubuntu $(lsb_release -cs)-cran40/"
-
-# install R itself
-sudo apt install --no-install-recommends r-base
-            </pre>
-        </li>
-        <li>Installeer de <a href="https://posit.co/download/rstudio-server/">RStudio Server IDE</a>:<br/>
-            <pre>
-# install dependencies
-sudo apt install -y r-base-core r-recommended r-base-dev gdebi-core build-essential libcurl4-gnutls-dev libxml2-dev libssl-dev
-sudo apt install --no-install-recommends gdebi-core
-
-# cd ~/Downloads
-
-# download the latest RStudio Server .deb file
-wget https://download2.rstudio.org/server/jammy/amd64/rstudio-server-2025.05.1-513-amd64.deb
-
-# install the .deb file
-sudo gdebi rstudio-server-2025.05.1-513-amd64.deb
-
-# start the RStudio Server
-sudo systemctl start rstudio-server
-
-# enable RStudio Server to start on boot
-sudo systemctl enable rstudio-server
-            </pre>
-        </li>
-        <li>Na het installeren van RStudio Server, check of je het kan bereiken door:
-            <ul>
-            <li>Het openen van een web browser en navigeren naar <code>http://localhost:8787</code>.</li>
-            <li>Inloggen met de gebruikersnaam en het wachtwoord dat je hebt gebruik om Linux/WSL2 te configureren.</li>
-            </ul>
-        </li>
-        </ul>
-    </p>
-    <p>
-        Als je Windows en WSL2 gebruikt, kun je de volledige instructies voor het installeren van R en RStudio op WSL2 vinden in dit 
-        <a href="https://support.posit.co/hc/en-us/articles/360049776974-Using-RStudio-Server-in-Windows-WSL2">POSIT artikel</a>.
-    </p>
-    </article>
   </div>
   </div>
 </div>
