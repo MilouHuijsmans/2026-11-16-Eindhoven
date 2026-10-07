@@ -1,6 +1,6 @@
 <div class="card mb-2" id="r">
   <div class="card-header d-flex align-items-center justify-content-between">
-    <h5>R</h5>
+    <h5>R en RStudio</h5>
     <ul class="nav nav-pills os-tabs" role="tablist">
       <li role="presentation" class="nav-item"><button class="nav-link active" data-os="windows" data-bs-target="#rstats-windows" aria-controls="Windows" role="tab" data-bs-toggle="tab">Windows</button></li>
       <li role="presentation" class="nav-item"><button class="nav-link" data-os="macos" data-bs-target="#rstats-macos" aria-controls="MacOS" role="tab" data-bs-toggle="tab">MacOS</button></li>
@@ -43,60 +43,19 @@
     </p>
     </article>
     <article role="tabpanel" class="tab-pane" id="rstats-linux">
-    <p>
-        Installeer R en RStudio als volgt:
-        <ul>
-        <li>Navigeer naar <a href="https://cran.r-project.org/bin/linux/">CRAN</a> en volg de instructies, met gebruik van jouw package manager. We hebben de commands hier beneden gereproduceerd:<br/>
-        <div class="info alert-info">
-            Gebruik de terminal command prompt om deze commands te typen of kopiëren en plakken, druk <kbd>Enter</kbd> na elke lijn om het command uit te voeren.<br/>
-            Run niet de lijntjes met <code>#</code> aan het begin van de lijn, omdat dit een opmerking aangeeft en niet onderdeel is van het command.
-        </div>
-            <pre>
-# update indices
-sudo apt update -qq
-
-# install two helper packages we need
-sudo apt install --no-install-recommends software-properties-common dirmngr
-
-# add the signing key for these repos
-wget -qO- https://cloud.r-project.org/bin/linux/ubuntu/marutter_pubkey.asc | sudo tee -a /etc/apt/trusted.gpg.d/cran_ubuntu_key.asc
-
-# add the repo from CRAN
-sudo add-apt-repository "deb https://cloud.r-project.org/bin/linux/ubuntu $(lsb_release -cs)-cran40/"
-
-# install R itself
-sudo apt install --no-install-recommends r-base
-            </pre>
-        </li>
-        <li>Installeer de <a href="https://posit.co/download/rstudio-server/">RStudio Server IDE</a>:<br/>
-            <pre>
-# install dependencies
-sudo apt install -y r-base-core r-recommended r-base-dev gdebi-core build-essential libcurl4-gnutls-dev libxml2-dev libssl-dev
-sudo apt install --no-install-recommends gdebi-core
-
-# cd ~/Downloads
-
-# download the latest RStudio Server .deb file
-wget https://download2.rstudio.org/server/jammy/amd64/rstudio-server-2025.05.1-513-amd64.deb
-
-# install the .deb file
-sudo gdebi rstudio-server-2025.05.1-513-amd64.deb
-
-# start the RStudio Server
-sudo systemctl start rstudio-server
-
-# enable RStudio Server to start on boot
-sudo systemctl enable rstudio-server
-            </pre>
-        </li>
+            <p><em>De installatieprocedure is afhankelijk van jouw Linux Distribution. Als je niet comfortabel bent met het zelf uitvoeren van de installatie, stop dan hier en vraag om hulp tijdens een inloopsessie. </em></p>
+      <p>
+      <ul>
+        <li>De download voor R en instructies voor installeren voor Linux kan gevonden worden op <a href="https://cran.r-project.org/bin/linux/">CRAN</a>.</li>
+		    <li>RStudio voor Linux kun je <a href="https://download2.rstudio.org/server/jammy/amd64/rstudio-server-2025.05.1-513-amd64.deb">hier</a> downloaden.</li>
         <li>Na het installeren van RStudio Server, check of je het kan bereiken door:
             <ul>
             <li>Het openen van een web browser en navigeren naar <code>http://localhost:8787</code>.</li>
             <li>Inloggen met de gebruikersnaam en het wachtwoord dat je hebt gebruik om Linux/WSL2 te configureren.</li>
             </ul>
         </li>
-        </ul>
-    </p>
+      </ul>
+    </p>     
     <p>
         Als je Windows en WSL2 gebruikt, kun je de volledige instructies voor het installeren van R en RStudio op WSL2 vinden in dit 
         <a href="https://support.posit.co/hc/en-us/articles/360049776974-Using-RStudio-Server-in-Windows-WSL2">POSIT artikel</a>.
