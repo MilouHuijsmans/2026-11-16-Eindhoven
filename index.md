@@ -1,7 +1,7 @@
 ---
 # More detailed instructions (including how to fill these variables for an # online workshop) are available at https://carpentries.github.io/workshop-template/customization/index.html#yaml-header
 # Required variables
-venue: "Fontys"        # brief name of the institution that hosts the workshop without address (e.g., "Euphoric State University")
+venue: "Fontys Eindhoven"        # brief name of the institution that hosts the workshop without address (e.g., "Euphoric State University")
 address: "volgt zsm"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria"), videoconferencing URL, or 'online'
 country: "nl"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes) for the institution that hosts the workshop
 language: "nl"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) for the workshop
@@ -127,12 +127,13 @@ Edit the general explanatory paragraph below if you want to change the pitch.
         <h5 class="card-header">The Carpentries</h5>
         <div class="card-body">
             <p>
-            <strong><a href="https://carpentries.org">The Carpentries</a></strong> project comprises the
+            <strong><a href="https://carpentries.org">The Carpentries</a></strong> is een project dat bestaat uit de
             <a href="{{site.dc_site}}">Data Carpentry</a>,
             <a href="{{site.hpcc_site}}">High-Performance Computing Carpentry</a>,  
             <a href="{{site.lc_site}}">Library Carpentry</a>, and
             <a href="{{site.swc_site}}">Software Carpentry</a>
-             communities of Instructors, Trainers, Maintainers, helpers, and supporters who share a mission to teach foundational computational and data science skills to researchers.
+             communities van Instructors, Trainers, Maintainers,
+            helpers, en supporters die een missie delen om fundamentele computationele en data science vaardigheden te onderwijzen aan onderzoekers.
             </p>
             {% assign intro_file = site.carpentry | append: '/intro.html' %}
             {% if isOfficial %}
@@ -148,14 +149,14 @@ Edit the general explanatory paragraph below if you want to change the pitch.
         <h5 class="card-header">Carpentries Clippings</h5>
         <div class="card-body">
         <p class="text-center">
-        <strong>Want to learn more and stay engaged with The Carpentries?</strong>
+        <strong>Wil je meer leren en betrokken blijven bij The Carpentries?</strong>
         </p>
         <p class="text-center">
-        Carpentries Clippings is The Carpentries' monthly newsletter, where we share community news, community job postings, and more.
+        Carpentries Clippings is de tweewekelijkse nieuwsbrief van The Carpentries, waarin we nieuws, vacatures en meer delen uit de community.
         </p>
         <p class="text-center">
             <a href="https://carpentries.org/newsletter/">
-                <button type="button" class="btn btn-success">Sign up to our newsletter</button>
+                <button type="button" class="btn btn-success">Aanmelden voor de nieuwsbrief</button>
             </a>
         </p>
       </div>
@@ -167,12 +168,12 @@ Edit the general explanatory paragraph below if you want to change the pitch.
         CODE OF CONDUCT
         {% endcomment %}
         <p class="text-center">
-        Everyone who participates in Carpentries activities is required to conform to the <a href="https://docs.carpentries.org/policies/coc/">Code of Conduct</a>, which also outlines how to report an incident if needed.
+        Iedereen die deelneemt aan een Carpentries activiteit is verplicht om zich te houden aan de <a href="https://docs.carpentries.org/policies/coc/">Code of Conduct</a>, welke ook aangeeft hoe een incident gerapporteerd kan worden als nodig.
         </p>
 
         <p class="text-center">
         <a href="https://goo.gl/forms/KoUfO53Za3apOuOK2">
-            <button type="button" class="btn btn-info">Report a Code of Conduct Incident</button>
+            <button type="button" class="btn btn-info">Rapporteer een Code of Conduct incident</button>
         </a>
         </p>
       </div>
@@ -204,11 +205,11 @@ address.
 {% endif %}
 
 <div class="card mb-2">
-  <h5 class="card-header">Workshop Logistics</h5>
+  <h5 class="card-header">Praktische informatie</h5>
   <div class="card-body">
     <dl class="mb-0">
     <div class="row">
-        <dt class="col-sm-2 col-md-2 py-2 px-3 bg-body-light text-body-secondary fw-bold">Who</dt>
+        <dt class="col-sm-2 col-md-2 py-2 px-3 bg-body-light text-body-secondary fw-bold">Wie</dt>
         <dd class="col py-2 px-3 mx-0 mb-0">
             {% comment %}
             AUDIENCE
@@ -223,13 +224,13 @@ address.
         </dd>
     </div>
     <div class="row">
-        <dt class="col-sm-2 col-md-2 py-2 px-3 bg-body-light text-body-secondary fw-bold">Where</dt>
+        <dt class="col-sm-2 col-md-2 py-2 px-3 bg-body-light text-body-secondary fw-bold">Waar</dt>
         <dd class="col py-2 px-3 mx-0 mb-0">
             {% if page.latitude and page.longitude and online == "false" %}    
                 {{page.address}}.
-                Get directions with
+                Voor navigatie zie
                 <a href="//www.openstreetmap.org/?mlat={{page.latitude}}&mlon={{page.longitude}}&zoom=16">OpenStreetMap</a>
-                or
+                of
                 <a href="//maps.google.com/maps?q={{page.latitude}},{{page.longitude}}">Google Maps</a>.
                 {% if page.what3words %}
                     What3Words location:
@@ -250,7 +251,7 @@ address.
         </dd>
     </div>
     <div class="row">
-        <dt class="col-sm-2 col-md-2 py-2 px-3 bg-body-light text-body-secondary fw-bold">When</dt>
+        <dt class="col-sm-2 col-md-2 py-2 px-3 bg-body-light text-body-secondary fw-bold">Wanneer</dt>
         <dd class="col py-2 px-3 mx-0 mb-0">
             {% comment %}
             DATE
@@ -266,7 +267,7 @@ address.
         </dd>
     </div>
     <div class="row">
-        <dt class="col-sm-2 col-md-2 py-2 px-3 bg-body-light text-body-secondary fw-bold">Requirements</dt>
+        <dt class="col-sm-2 col-md-2 py-2 px-3 bg-body-light text-body-secondary fw-bold">Voorwaarden</dt>
         <dd class="col py-2 px-3 mx-0 mb-0">
             {% comment %}
             SPECIAL REQUIREMENTS
@@ -275,18 +276,17 @@ address.
             {% endcomment %}
             <p id="requirements">
             {% if online == "false" %}
-                Participants must bring a laptop with a
-                Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on.
+                Deelnemers moeten een laptop meenemen met een Mac, Linux, of Windows operating system (geen tablet, Chromebook, etc.) met een Software Center of administratieve rechten.
             {% else %}
                 Participants must have access to a computer with a
                 Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on.
             {% endif %}
-            They should have a few specific software packages installed (listed <a href="#setup">below</a>).
+            Zorg ervoor dat je vooraf aan de workshop de setup hebt voltooid (zie <a href="#setup">hieronder</a>).
             </p>
         </dd>  
     </div>
     <div class="row">
-        <dt class="col-sm-2 col-md-2 py-2 px-3 bg-body-light text-body-secondary fw-bold">Accessibility</dt>
+        <dt class="col-sm-2 col-md-2 py-2 px-3 bg-body-light text-body-secondary fw-bold">Toegankelijkheid</dt>
         <dd class="col py-2 px-3 mx-0 mb-0">
             {% comment %}
             ACCESSIBILITY
@@ -295,44 +295,18 @@ address.
             {% endcomment %}
 
             <p id="accessibility">
-            We are committed to making this workshop accessible to everybody. 
+            Wij zijn toegewijd om deze workshop toegankelijk te maken voor iedereen. 
             {% if online == "false" %}
-                The workshop organizers have checked that:
+                De organisatoren bevestigen dat:
                 <br/>
                 <ul>
-                    <li>The room is wheelchair / scooter accessible.</li>
-                    <li>Accessible restrooms are available.</li>
+                    <li>De ruimte toegankelijk is voor rolstoelen en scootmobielen.</li>
+                    <li>Er toegankelijke toiletten beschikbaar zijn.</li>
                 </ul>
             {% endif %}
             </p>
             <p>
-            We are dedicated to providing a positive and accessible learning environment for all. 
-            We do not require participants to provide documentation of disabilities or disclose any unnecessary personal information. 
-            However, we do want to help create an inclusive, accessible experience for all participants. 
-            We encourage you to share any information that would be helpful to make your Carpentries experience accessible.
-            To request accessibility support for this workshop, please fill out the 
-            <a href="https://carpentries.typeform.com/to/B2OSYaD0">accessibility support request form</a>.
-            If you have questions or need assistance with the accessibility support form please <a href="mailto:team@carpentries.org">email us</a>.
-            </p>
-            <p>
-            <a href="https://glosario.carpentries.org/">Glosario</a> is a multilingual glossary for computing and data science terms.
-            The glossary helps learners attend workshops and use our lessons to make sense of computational and programming jargon written in English by offering it in their native language.
-            Translating data science terms also provides a teaching tool for Carpentries Instructors to reduce barriers for their learners.
-            </p>
-        </dd>
-    </div>
-    <div class="row">
-        <dt class="col-sm-2 col-md-2 py-2 px-3 bg-body-light text-body-secondary fw-bold">Workshop Recordings</dt>
-        <dd class="col py-2 px-3 mx-0 mb-0">
-            {% comment %}
-            WORKSHOP RECORDINGS
-
-            Modify or remove the block below if you plan to record the workshop.
-            {% endcomment %}
-            <p id="recordings">
-            Carpentries workshops are designed to be interactive rather than lecture-based, with lessons that build upon one another.
-            To foster a positive online learning environment, we strongly recommend that participants join in real time.
-            As a result, workshop recordings are not recommended and may not be available to learners.
+            <a href="https://glosario.carpentries.org/">Glosario</a>is een meertalige glossary voor computationele en data science termen. De glossary helpt met het volgen van workshops en het gebruiken van computationele en data science jargon geschreven in het Engels door deze aan te bieden in andere talen. Het vertalen van data science termen is ook een tool voor Carpentries Instructors om de drempels voor het leren van data science te verlagen.
             </p>
         </dd>
     </div>
@@ -345,7 +319,7 @@ address.
             Display the contact email address set in the configuration file.
             {% endcomment %}
             <p id="contact">
-            Please email
+            Stuur een e-mail naar
             {% if page.email %}
             {% for email in page.email %}
             {% if forloop.last and page.email.size > 1 %}
@@ -360,7 +334,7 @@ address.
             {% else %}
             to-be-announced
             {% endif %}
-            for more information.
+            voor vragen of meer informatie.
             </p>
         </dd>
     </div>
@@ -369,8 +343,7 @@ address.
         <dt class="col-sm-2 col-md-2 py-2 px-3 bg-body-light text-body-secondary fw-bold">Workshop FAQ</dt>
         <dd class="col py-2 px-3 mx-0 mb-0">
             <p id="workshops-faq">
-            For answers to frequently asked questions about workshops,
-            refer to <a href="https://carpentries.org/workshops/workshops-faq">the Carpentries Workshop FAQ</a>.
+            Voor antwoorden op veelgestelde vragen over de workshop, ga naar <a href="[https://carpentries.org/workshops/workshops-faq/](https://carpentries.org/workshops/workshops-faq/)">the Carpentries Workshop FAQ</a>.
             </p>    
         </dd>
     </div>
@@ -399,12 +372,12 @@ Edit the text to match who can attend the workshop. For instance:
 - This workshop is open to the public.
 - If you are interested in attending this workshop, contact me@example.com
   for more information
-
-<p id="who-can-attend">
-    <strong>Who can attend?:</strong>
-    This workshop is open to ....
-</p>
 {% endcomment %}
+<p id="who-can-attend">
+    <strong>Wie kan deelnemen?:</strong>
+    Deze workshop is open voor onderzoekers en onderzoeksondersteuners van organisaties die zijn aangesloten bij DCC-PO.
+</p>
+
 
 
 {% comment %}
@@ -420,9 +393,9 @@ e.g., '2015-06-10-esu'.
 Note we also have a CodiMD (the open-source version of HackMD) available at https://codimd.carpentries.org
 {% endcomment %}
 {% if page.collaborative_notes %}
-<h2 id="collaborative_notes">Collaborative Notes</h2>
+<h2 id="collaborative_notes">Gedeelde notities</h2>
 <p>
-We will use this <a href="{{ page.collaborative_notes }}">collaborative document</a> for chatting, taking notes, and sharing URLs and bits of code.
+We zullen dit <a href="{{ page.collaborative_notes }}">samenwerkingsbestand</a> gebruiken voor het delen van notities, opdrachten, URL's en stukjes code.
 </p>
 {% endif %}
 
@@ -438,7 +411,7 @@ SURVEYS - DO NOT EDIT SURVEY LINKS
         <div class="card text-center">
             <div class="card-body">
                 <h5 class="card-title">Pre-Workshop Survey</h5>
-                <p class="card-text">Please fill out this survey <strong>before attending</strong> the workshop.</p>
+                <p class="card-text">Vul aub deze vragenlijst in <strong>vooraf</strong> aan de workshop.</p>
                 {% if site.carpentry == "incubator" %}
                 <a href="{{ site.incubator_pre_survey }}">Pre-workshop Survey</a>
                 {% elsif site.incubator_pre_survey %}
@@ -451,9 +424,9 @@ SURVEYS - DO NOT EDIT SURVEY LINKS
                 change the value of `carpentry` to `incubator`.
                 </div>
                 {% elsif site.carpentry == "hpcc" %}
-                <a href="{{ site.hpcc_pre_survey }}{{ site.github.project_title }}" class="btn btn-primary">Fill Out the Pre-Workshop Survey</a>
+                <a href="{{ site.hpcc_pre_survey }}{{ site.github.project_title }}" class="btn btn-primary">Vul de Pre-Workshop Survey in</a>
                 {% else %}
-                <a href="{{ site.pre_survey }}{{ site.github.project_title }}" class="btn btn-primary">Fill Out the Pre-Workshop Survey</a>
+                <a href="{{ site.pre_survey }}{{ site.github.project_title }}" class="btn btn-primary">Vul de Pre-Workshop Survey in</a>
                 {% endif %}
             </div>
         </div>
@@ -462,7 +435,7 @@ SURVEYS - DO NOT EDIT SURVEY LINKS
         <div class="card text-center">
             <div class="card-body">
                 <h5 class="card-title">Post-Workshop Survey</h5>
-                <p class="card-text">Please fill out this survey <strong>before you leave</strong> the workshop.</p>
+                <p class="card-text">Vul aub deze vragenlijst in <strong>voor het einde</strong> van de workshop.</p>
                 {% if site.carpentry == "incubator" %}
                 <a href="{{ site.incubator_post_survey }}">Post-workshop Survey</a>
                 {% elsif site.incubator_post_survey %}
@@ -477,7 +450,7 @@ SURVEYS - DO NOT EDIT SURVEY LINKS
                 {% elsif site.carpentry == "hpcc" %}
                 <a href="{{ site.hpcc_post_survey }}{{ site.github.project_title }}" class="btn btn-primary">Fill Out the Pre-Workshop Survey</a>
                 {% else %}
-                <a href="{{ site.post_survey }}{{ site.github.project_title }}" class="btn btn-primary">Fill Out the Post-Workshop Survey</a>
+                <a href="{{ site.post_survey }}{{ site.github.project_title }}" class="btn btn-primary">Vul de Post-Workshop Survey in</a>
                 {% endif %}
             </div>
         </div>
@@ -549,7 +522,7 @@ please preview your site before committing, and make sure to run
 
 <h2 id="setup">Setup</h2>
 <p>
-  To participate in a
+  Om deel te nemen aan een
   {% if site.carpentry == "swc" %}
   Software Carpentry
   {% elsif site.carpentry == "dc" %}
@@ -559,14 +532,16 @@ please preview your site before committing, and make sure to run
   {% elsif site.carpentry == "hpcc" %}
   High-Performance Computing Carpentry
   {% endif %}
-  workshop, you will need access to software as described below.
-  In addition, you will need an up-to-date web browser.
+  workshop, heb je toegang nodig tot de onderstaande software. Daarnaast heb je een up-to-date internet browser nodig.
 </p>
 <p>
-  We maintain a list of common issues that occur during installation as a reference for instructors that may be useful on the
-  <a href="{{site.swc_github}}/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki page</a>.
+  We onderhouden een lijst van veel voorkomende problemen tijdens installatie op de
+  <a href = "{{site.swc_github}}/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki pagina</a>.
 </p>
 
+<p>
+  <em>Lukt het niet om de installatie te voltooien vooraf aan de workshop? Maak dan in de internet browser gebruik van <a href="https://webr.sh/">deze web-versie van RStudio</a></em>
+</p>
 
 {% comment %}
 For online workshops, the section below provides:
